@@ -22,7 +22,7 @@ const RejectedRequestModal = ({
       aria-labelledby="modal-title"
       aria-describedby="modal-description"
     >
-      <div className="absolute w-[70%] top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] bg-white rounded-[10px] p-[3rem]">
+      <div className="absolute w-[71%] top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] bg-white rounded-[10px] p-[3rem]">
         <CloseIcon
           className="absolute w-6 h-6 top-5 right-5 hover:scale-150 transition-all cursor-pointer"
           onClick={handleClose}

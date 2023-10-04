@@ -1,0 +1,89 @@
+@tailwind base;
+
+@layer base {
+  html {
+    @apply text-neutral-800;
+  }
+  html.dark {
+    @apply text-neutral-50;
+    @apply bg-neutral-800;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Gotham";
+  src: url("./font/Gotham/Gotham-Light.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("./font/Gotham/Gotham-Book.otf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("./font/Gotham/Gotham-Medium.otf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gotham", "Arial Narrow", Arial, sans-serif !important;
+}
+
+.nav-icon svg path {
+  fill: #fdb815;
+}
+
+.nav-icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background: #fdb815;
+}
+
+.mobile-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.laptop-icon {
+  width: 6.25rem;
+  height: 6.25rem;
+}
+
+@screen xl {
+  .layout {
+    grid-template-columns: 371px 1fr;
+  }
+
+  .content {
+    max-width: calc(100vw - 371px);
+  }
+}
+
+/* Remove input background color on paste */
+input:-webkit-autofill {
+  -webkit-background-clip: text !important;
+}

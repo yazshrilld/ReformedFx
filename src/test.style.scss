@@ -1,0 +1,21 @@
+.statisticjjjs-column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  padding: 20px;
+  margin: 20px;
+  background-color: #FFF;
+  border-radius: 12px;
+
+  &-items {
+    display: flex;
+    align-items: center;
+    height: 7rem;
+    border-radius: 8px;
+    padding: 0 1.5rem;
+
+    &-descriptiosn {
+      flex: 1;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+[
+  {
+    "//_________COMMENT": "PAYLOAD FOR THE REQUEST",
+
+
+
+    "requestRejectedReason": "Dear Ogba Cot. Ltd, we are sorry to inform you that this report does not meet our standard, refer to your mail for more information.",
+    "requestStatus": "REJECTED",
+    "staffUsername": "ymusa@providusbank.com"
+  },
+
+  {
+    "//_________COMMENT": "SOLICITOR REPORT RESPONSE FROM THE PATCH REQUEST TO UPDATE STATUS.......................... PLEASE ADD requestRejectedReason TO THE SOLICITOR RESPONSE SO I CAN GET IT AND DISPLAY IT ON THE NEW TABLE I AM CREATING, THANKS.",
+
+
+
+    "createdBy": "ymusa@providusbank.com",
+    "dateCreated": "2023-08-11 09:13:01",
+    "updatedBy": "musa.yazid49@gmail.com",
+    "dateUpdated": "2023-08-16 11:49:37",
+    "companyName": "jhjhksjka",
+    "companyRegisteredAddress": "kjsndksdn",
+    "companyRegistrationDate": "20-Aug-2023",
+    "rcNumber": "928392",
+    "companyType": "INCORPORATED_TRUSTEES",
+    "shareholdingStructure": "ksdks",
+    "proprietorsName": "Decn Rice",
+    "secretaryName": "Shena",
+    "proprietorsRegisteredAddress": "3, Ajel Avenue",
+    "directors": [],
+    "trustees": [
+      {
+        "trusteeName": "jhdjshsdj",
+        "trusteeResidentialAddress": "kjsdksbdbks"
+      },
+      {
+        "trusteeName": "kksksndjks",
+        "trusteeResidentialAddress": "jksdksksk"
+      }
+    ],
+    "solicitorReportDocument1": "C:/Users/nagbara/src/main/resources/static/jhjhksjka/153380941156449.pdf",
+    "solicitorReportDocument2": "C:/Users/nagbara/src/main/resources/static/jhjhksjka/Receipt002450528152556.pdf",
+    "solicitorComment": "The Company is who they say they are"
+  }
+]

@@ -70,6 +70,9 @@ export default function BaseTable({
             </TableRow>
           </TableHead>
           <TableBody>
+            {
+              console.log({rows})
+            }
             {isLoading ? (
               [...Array(10).keys()].map((tr) => (
                 <TableRow key={tr}>
@@ -86,10 +89,6 @@ export default function BaseTable({
                   ))}
                 </TableRow>
               ))
-            ) : rows?.length === 0 ? (
-              <p className="text-xl font-bold mt-6 mb-3 text-center">
-                There are no records for this table yet
-              </p>
             ) : (
               rows
                 // ?.filter((item) => {

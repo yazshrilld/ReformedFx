@@ -138,6 +138,29 @@ export const navigation = (role) => [
     href: "/app/dashboard",
     role: true,
   },
+  {
+    name: "Trade",
+    icon: <Reports />,
+    href: "/app/trade",
+    role: true,
+    dropdown: [
+      {
+        label: "Limit",
+        href: "/app/trade/limit",
+        role: [2].includes(role),
+      },
+      {
+        label: "Approved Time",
+        href: "/app/trade/approved-time",
+        role: [2].includes(role),
+      },
+      {
+        label: "Exception",
+        href: "/app/trade/exceptional-trade",
+        role: [2, 4].includes(role),
+      }
+    ],
+  },
 ];
 
 // initial table values columns for creating a table

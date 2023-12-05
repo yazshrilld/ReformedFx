@@ -1,5 +1,5 @@
-import { useQuery } from "@tanstack/react-query";
 import { useState, useContext } from "react";
+import { useQuery } from "@tanstack/react-query";
 import { UserContext } from "context/UserContext";
 
 import {
@@ -41,18 +41,14 @@ const validationSchema = Yup.object().shape({
 });
 
 const DashboardNew = () => {
-  const {
-    user,
-    fxSocketStatus,
-    setFxRates,
-  } = useContext(UserContext);
+  const { user, fxSocketStatus, setFxRates } = useContext(UserContext);
   const userRole = sessionStorage.getItem("__role");
   const myRole = resolveUserRoleAccess(userRole);
   // const data = FXTX_DUMMY_DATA;
   // const fxData = data[0]?.data?.blotter;
   // const myRole = resolveUserRoleAccess(user.role);
   // console.log("Length Of Fx :", fxData.length);
-
+  console.log({ user });
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(10);
   const [activeCreatedRequest, setActiveCreatedRequest] = useState(false);
@@ -157,7 +153,6 @@ const DashboardNew = () => {
   };
 
   const handleSubmit = async (values, { resetForm }) => {
-    // const { rawStartDate, rawEndDate } = values;
     refetch();
     // console.log("Search Values: ", ...rest);
   };
@@ -198,6 +193,8 @@ const DashboardNew = () => {
     enabled: false,
   });
 
+  // console.log(SearchedData.length);
+
   //
   return (
     <>
@@ -237,7 +234,7 @@ const DashboardNew = () => {
               <h1 className="text-xl font-semibold">Dashboard</h1>
               <button
                 className={`absolute right-0 top-0 -translate-y-2 translate-x-4 h-[12px] w-[12px]  border-2 border-solid border-blue rounded-[50%] ${
-                  fxSocketStatus ? "bg-green-500" : "bg-red-500"
+                  fxSocketStatus ? "bg-green-500" : "bg-red-500 animate-ping"
                   // fxStatus ? "bg-green-500" : "bg-red-500"
                 }`}
               ></button>
@@ -260,12 +257,12 @@ const DashboardNew = () => {
             <h1>Loading Data...</h1>
           )
         } */}
-
+      </div>
+      {SearchedData?.length > 0 || data?.fxBlotterData?.length > 0 ? (
         <BaseTable
-          // rows={fxData || []}
           rows={
             formik.values.rawStartDate && formik.values.rawEndDate
-              ? SearchedData || []
+              ? SearchedData || data?.fxBlotterData || []
               : data?.fxBlotterData || []
           }
           // rows={data?.fxBlotterData || []}
@@ -278,13 +275,21 @@ const DashboardNew = () => {
           setRowsPerPage={setRowsPerPage}
           actionOptions={["View Details"]}
           actionItemOnClick={toggleModal}
+          T
           // totalPage={fxData?.length}
-          totalPage={data?.fxBlotterData?.length}
+          // totalPage={data?.fxBlotterData?.length}
           // allCheckboxOnChange={allCheckboxOnChange}
           search={search}
           filterKey="companyName"
         />
-      </div>
+      ) : (
+        <div>
+          <h1 className={`font-semibold mb-1 text-lg`}>No Records Found</h1>
+          <p>{`You have no records for `}<strong>{`[ ${dayjs(new Date()).format(
+            "DD-MM-YYYY HH:mm A"
+          )} ]`}</strong></p>
+        </div>
+      )}
     </>
   );
 };

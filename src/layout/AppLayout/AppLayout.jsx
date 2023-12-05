@@ -21,7 +21,7 @@ const AppLayout = ({ handleSelection }) => {
     fxSocketStatus,
     setFxSocketStatus,
   } = useContext(UserContext);
-  const staff = user.username;
+  const staff = user?.username;
   const userRole = sessionStorage.getItem("__role");
   const myRole = resolveUserRoleAccess(userRole);
   const baseURL = process.env.REACT_APP_TEST_BASE_URL;
@@ -229,12 +229,12 @@ const AppLayout = ({ handleSelection }) => {
   };
 
   useEffect(() => {
-    if (!user?.exp || user.exp * 1000 < Date.now()) {
+    if (!user?.exp || user?.exp * 1000 < Date.now()) {
       sessionStorage.removeItem("__tk");
       sessionStorage.removeItem("__role");
       navigate("/auth/sign-in", { replace: true });
     }
-  }, [pathname, navigate, user.exp]);
+  }, [pathname, navigate, user?.exp]);
 
   const { isLoading } = useQuery({
     queryKey: ["fetch-fx-now-layout"],

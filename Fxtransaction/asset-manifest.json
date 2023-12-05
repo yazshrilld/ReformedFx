@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/Fxtransaction/static/css/main.6d46f72c.css",
+    "main.js": "/Fxtransaction/static/js/main.6edce8f6.js",
+    "static/media/Gotham-Medium.otf": "/Fxtransaction/static/media/Gotham-Medium.a52599fa8cce74bab773.otf",
+    "static/media/Gotham-Book.otf": "/Fxtransaction/static/media/Gotham-Book.7f34eb053257cab413dc.otf",
+    "static/media/Gotham-Light.otf": "/Fxtransaction/static/media/Gotham-Light.a21d1577f411612a2753.otf",
+    "static/media/forex.svg": "/Fxtransaction/static/media/forex.1f14f27b4a11fd6334ac287be5235023.svg",
+    "static/media/providus.svg": "/Fxtransaction/static/media/providus.1299c515f761d2d69beca2d0f7812f5a.svg",
+    "static/media/pending_request.svg": "/Fxtransaction/static/media/pending_request.a2fb193d249aa9f5518b1c6422c11cc4.svg",
+    "static/media/quick_reference_all.svg": "/Fxtransaction/static/media/quick_reference_all.6a05a55558eabdac2f92b8c5a29c99ea.svg",
+    "static/media/visibility.svg": "/Fxtransaction/static/media/visibility.a37c98efd420fabdae9dea30f1bdd849.svg",
+    "static/media/fact_check.svg": "/Fxtransaction/static/media/fact_check.f47a44c471872fed6c221e224ee42173.svg",
+    "static/media/contacts.svg": "/Fxtransaction/static/media/contacts.3ad17fa07fcdc39d2e903102168b99f6.svg",
+    "static/media/contract.svg": "/Fxtransaction/static/media/contract.021ac2210c6ad1c0221b65f360f061a8.svg",
+    "static/media/task.svg": "/Fxtransaction/static/media/task.1c2f5206b5ea497633b05f5831b9256f.svg",
+    "static/media/note_add.svg": "/Fxtransaction/static/media/note_add.4b86795675450557dacccc6a96c2a6cb.svg",
+    "static/media/event.svg": "/Fxtransaction/static/media/event.9749046e6232d043774e03e613bcdce5.svg",
+    "static/media/close.svg": "/Fxtransaction/static/media/close.1cf2dfd101f03aa84b00e14bdaaa7845.svg",
+    "static/media/more.svg": "/Fxtransaction/static/media/more.3e1c94194e5ebcc498fe2a329ed6afad.svg",
+    "static/media/search.svg": "/Fxtransaction/static/media/search.46a73322d23f3e4de85f32837b214051.svg",
+    "static/media/Avatar.svg": "/Fxtransaction/static/media/Avatar.29e6aa125ac3d0e43a65b3b25ddcf36c.svg",
+    "static/media/eye-closed.svg": "/Fxtransaction/static/media/eye-closed.fb1bd289ecb245940243d3c60a2ce198.svg",
+    "static/media/expand_more.svg": "/Fxtransaction/static/media/expand_more.4d05dcd84abca357660557c984bdae42.svg",
+    "static/media/eye-open.svg": "/Fxtransaction/static/media/eye-open.c763c8151f6e8f9e61e836c7cb773dfd.svg",
+    "index.html": "/Fxtransaction/index.html",
+    "static/media/home.svg": "/Fxtransaction/static/media/home.b1a61a427fadfd5c3e005b698649af1f.svg",
+    "static/media/hamburger.svg": "/Fxtransaction/static/media/hamburger.cb0056cccaf6e0733c0ccb75d12f7065.svg",
+    "main.6d46f72c.css.map": "/Fxtransaction/static/css/main.6d46f72c.css.map",
+    "main.6edce8f6.js.map": "/Fxtransaction/static/js/main.6edce8f6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6d46f72c.css",
+    "static/js/main.6edce8f6.js"
+  ]
+}

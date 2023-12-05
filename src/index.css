@@ -8,6 +8,16 @@
     @apply text-neutral-50;
     @apply bg-neutral-800;
   }
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  [type='time']::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    font-size: 20px
+  }
 }
 
 @tailwind components;

@@ -10,6 +10,10 @@ import "./index.css";
 import AppLayout from "layout/AppLayout/AppLayout";
 import AuthLayout from "layout/AuthLayout";
 import UserContextProvider from "context/UserContext";
+import Trade from "pages/Trade/Trade";
+import ExceptinalTrade from "pages/Trade/ExceptinalTrade";
+import Limit from "pages/Trade/Limit";
+import ApprovedTime from "pages/Trade/ApprovedTime";
 
 function App() {
   const matches = useMediaQuery("(min-width:600px)");
@@ -29,10 +33,19 @@ function App() {
           <Route path="sign-in" element={<SignIn />} />
         </Route>
 
-        {/* Dashboard */}
-
-        <Route path="/app" element={<UserContextProvider><AppLayout handleSelection={handleSelection} /></UserContextProvider>}>
+        <Route
+          path="/app"
+          element={
+            <UserContextProvider>
+              <AppLayout handleSelection={handleSelection} />
+            </UserContextProvider>
+          }
+        >
           <Route path="dashboard" element={<DashboardNew />} />
+          <Route path="trade" element={<Trade />} />
+          <Route path="trade/exceptional-trade" element={<ExceptinalTrade />} />
+          <Route path="trade/approved-time" element={<ApprovedTime />} />
+          <Route path="trade/limit" element={<Limit />} />
         </Route>
         <Route path="*" element={<PageNotFound />} />
       </Routes>

@@ -14,16 +14,16 @@ const InputFormField = ({
           {label}
         </label>
       )}
-      <div className="relative bg-[#F8F8F8] rounded-[10px] flex items-center">
+      <div className="relative bg-[#F8F8F8] rounded-[10px] flex items-center mb-2 shadow-[0px_4px_17px_4px_rgba(0,0,0,0.10)]">
         <input
           type={type}
-          className="appearance-none bg-[#F8F8F8] px-4 block w-full h-[61px] outline-none rounded-[10px] border border-transparent focus-within:border-[#FDB815]"
+          className="appearance-none bg-[#F8F8F8] px-4 block w-full h-[61px] outline-none rounded-[10px] border border-transparent"
           {...props}
         />
         {appendIcon}
       </div>
       {touched && error && (
-        <span className="text-xs mt-[5px] block text-red-500">{error}</span>
+        <p className="text-center text-xs block text-red-500 border-none">{error}</p>
       )}
     </div>
   );

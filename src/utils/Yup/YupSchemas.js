@@ -1,5 +1,14 @@
 import * as Yup from "yup";
 
+export const LimitSchema = Yup.object({
+  limit: Yup.string().required("Limit is required"),
+})
+
+export const ApprovedTimeSchema = Yup.object({
+  startTime: Yup.string().required("Start time is required"),
+  endTime: Yup.string().required("End time is required"),
+})
+
 export const LoginSchema = Yup.object({
   userName: Yup.string().required("username is required"),
   password: Yup.string().required("Password is required"),

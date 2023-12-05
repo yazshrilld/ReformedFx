@@ -14,3 +14,8 @@ export const updateStatusFn = async (payload) => {
   const res = await Axios.post(`/start_stop`, payload);
   return res;
 };
+
+export const validateLimitFn = async (payload) => {
+  const res = await Axios.post(``, payload);
+  return res;
+};
